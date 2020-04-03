@@ -1,0 +1,13 @@
+{
+    "root": true,
+    "parser": "babel-eslint",
+    "env": {
+        "node": true
+    },
+    "plugins": ["node"],
+    "extends": ["eslint:recommended", "plugin:node/recommended"],
+    "rules": {
+        "prefer-const": "warn",
+        "node/no-unpublished-require": ["warn", {"allowModules": ["longjohn", "morgan"]}]
+    }
+}

@@ -1,0 +1,12 @@
+.db
+.dockerignore
+.eslintrc
+.env
+.git
+.gitignore
+.prettierrc
+.vscode
+node_modules
+docker-compose.yml
+LICENSE
+README.md

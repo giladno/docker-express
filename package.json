@@ -1,0 +1,50 @@
+{
+    "name": "docker-express",
+    "version": "1.0.0",
+    "description": "Docker example for expressjs",
+    "engines": {
+        "node": ">=12"
+    },
+    "main": "server.js",
+    "scripts": {
+        "start": "docker-compose up --build || true",
+        "ssh": "docker exec -it docker-express_app_1 /bin/sh"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/giladno/docker-express.git"
+    },
+    "keywords": [],
+    "author": "Gilad Novik <gilad@novik.ca>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/giladno/docker-express/issues"
+    },
+    "homepage": "https://github.com/giladno/docker-express#readme",
+    "devDependencies": {
+        "babel-eslint": "^10.1.0",
+        "eslint": "^6.8.0",
+        "eslint-plugin-node": "^11.1.0",
+        "longjohn": "^0.2.12",
+        "morgan": "^1.10.0",
+        "nodemon": "^2.0.2"
+    },
+    "dependencies": {
+        "cookie-session": "^1.4.0",
+        "express": "^4.17.1",
+        "express-async-errors": "^3.1.1",
+        "hbs": "^4.1.0",
+        "loglevel": "^1.6.7",
+        "mysql2": "^2.1.0",
+        "require-all": "^3.0.0",
+        "sequelize": "^5.21.5"
+    },
+    "nodemonConfig": {
+        "ignore": [
+            "node_modules/*",
+            ".db/*",
+            ".git/*"
+        ],
+        "delay": "750"
+    }
+}
